@@ -67,4 +67,96 @@ function sayHi() {
   console.log(typeof sayHi()); // typeof 21 = Number
 
 8. Next to each line given below write condition or loop based on what will be used in solving.
+
+List numbers from 1 to 100
+
+for(let i = 1; i <= 100; i++) {
+console.log(i);
+}
+
+Check if the number id odd or even
+
+if(num % 2 === 0) {
+console.log("num is even");
+} else {
+ console.log("num is odd");
+}
+
+Keep buying phone if the total amount is less than 20000
+
+if(amount < 20000) {
+console.log("Buy a Phone");
+}
+
+Only buy accessories if the total amount id less than 10000
+
+if(amount < 10000) {
+alert("Only buy accessories");
+}
+
+List all the even values from 0 to 100
+
+for(let j = 2; j <= 100; j++) {
+if(j % 2 === 0) {
+console.log(j);
+}
+}
+
+List all the odd values from 0 to 100
+
+for(let k = 1; k <= 100; k++) {
+if(k % 2 != 0) {
+console.log(k);
+}
+}
+
+Drink a glass of water when you are thirsty
+
+if(value === "thirsty") {
+console.log("Drink a glass of water");
+}
+
+9. Write a function that accepts the name of a product like phone, laptop, watch, tv or tablet. Based on the input return the price of the product. (You can choose any price you want). What will you use to solve this switch or if..else Explain your reason of why to use user one over another.
+
+let price;
+function productWithPrice(product) {
+    switch(product) {
+        case "laptop":
+             price = prompt("Enter your price:");
+            return(`laptop with price of ${price}`);
+            // break;
+        case "Phone":
+             price = prompt("Enter your price:");
+            return(`Phone with price of ${price}`);
+            // break;
+        case "Tablet":
+            price = prompt("Enter your price:");
+            return(`Tablet with price of ${price}`);
+            // break;
+        case "Watch":
+            price = prompt("Enter your price:");
+            return(`Watch with price of ${price}`);
+            // break;
+        case "TV":
+            price = prompt("Enter your price:");
+            return(`TV with price of ${price}`);
+            // break;
+        default:
+            return("Please Enter a valid input.");
+    }
+}
+console.log(productWithPrice("laptop"));
+
+10. What will be the output of the following lines of code given below?
 */
+function add(a, b) {
+    return a + b;
+  }
+  typeof typeof add(21, 22); // String
+  typeof typeof add(21, '22'); // String
+  
+  typeof typeof typeof add(100, true); // String
+  typeof add(100 || true, 12 && 21); // Number
+  typeof add(100 || true, 12 && 21 && 0); // Number
+  typeof add; // Function 
+  typeof typeof add; // String
